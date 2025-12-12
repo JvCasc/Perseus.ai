@@ -4,7 +4,7 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import './index.css'
 import './header.css'
-import './mainText.css'
+import './mainContent.css'
 
 
 
@@ -49,8 +49,10 @@ function Assinar(){
 
 function Iphone(){
   return(
+    <div className = "baseIphone"> 
     <div className = "iphone"> 
       <img src="iphone.png" />
+    </div>
     </div>
   )
 }
@@ -76,15 +78,45 @@ function EmojiParticles() {
           opacity: { value: 0.5 },
           size: { value: { min: 8, max: 16 } },
           shape: {
-          type: "text",
+          type: "image",
           options: {
-            text: {
-              value: ["💪", "🔥", "🥵", "🏃‍♂️", "🏋️‍♂️", "🍖", "🤸‍♀️", "⚡"],
-              font: "Verdana",
-              style: "",
-              weight: "400",
-              fill: true
-            }
+            image: [
+              {
+                src: "/emojis/fire.png",
+                width: 64,
+                height: 64,
+              },
+              {
+                src: "/emojis/biceps.png",
+                width: 64,
+                height: 64,
+              },
+              {
+                src: "/emojis/cambalhota.png",
+                width: 64,
+                height: 64,
+              },
+              {
+                src: "/emojis/cansado.png",
+                width: 64,
+                height: 64,
+              },
+              {
+                src: "/emojis/carne.png",
+                width: 64,
+                height: 64,
+              },
+              {
+                src: "/emojis/peso.png",
+                width: 64,
+                height: 64,
+              },
+              {
+                src: "/emojis/correndo.png",
+                width: 64,
+                height: 64,
+              }                                                             
+            ]
           }
         }
         }
@@ -97,10 +129,12 @@ function App(){
   return(
     <>
     <Topheader/>
+    <div>
     <EmojiParticles />
     <MainText />
     <Assinar />
     <Iphone />
+    </div>
     </>
   )
 }
