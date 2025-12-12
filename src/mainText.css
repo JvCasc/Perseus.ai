@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/poppings/Poppins-ExtraBold.ttf')
+}
+
+.mainText{
+    font-family: "Poppins";
+    color: #383838;
+    text-align: center;
+}
+
+.h1text{
+    font-size: 25px;
+    padding-top: 2ch;
+    align-items: center;
+}
+
+.assinarButton{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-assinar{
+    font-size: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 15px 31px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.iphone{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Responsivo simples */
+@media (max-width: 480px) {
+  .h1text { font-size: 10px; }
+}
