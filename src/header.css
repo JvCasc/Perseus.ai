@@ -26,6 +26,7 @@
 }
 
 .topbar__actions {
+    font-family: "PoppinsBold";
     display: flex;
     align-items: center;
     gap: 12px;
