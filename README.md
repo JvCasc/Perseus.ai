@@ -1,6 +1,6 @@
 # 🏃‍➡️ Perseus.ai ( EM ANDAMENTO... )
 
-![WebPage](webpage.png)
+[![Tela do app](public/webpage.png)](public/webpage.png)
 
 Bot inteligente que cria **treinos semanais personalizados de academia** com base nas informações do usuário, como idade, peso, objetivo e nível de experiência.
 
