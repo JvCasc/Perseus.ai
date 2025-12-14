@@ -6,18 +6,15 @@ import './index.css'
 import './header.css'
 import './mainContent.css'
 
-
-
 function Topheader(){
   return (
-    <header className = "topheader"> 
-      <nav className="topbar__nav"> 
+    <header> 
+      <nav className="pt-8 m-auto m-0 flex justify-between max-w-320"> 
+        <a className="font-[PoppinsExtraBold] text-4xl font-extrabold text-[#383838]" href="/">Perseus.ai</a>
 
-        <a className="topbar__perseus" href="/">Perseus.ai</a>
-
-        <div className="topbar__actions">
-          <a className="btn btn--primary" href="/">Assinar agora</a>
-          <a className="btn btn--link" href="/">Login</a>
+        <div className="font-[PoppinsBold] gap-8 items-center flex">
+          <a className="shadow-lg inline-flex items-center bg-[#ff4d4d] justify-center rounded-full pt-[8px] pb-[8px] pr-[21px] pl-[21px]" href="/">Assinar agora</a>
+          <a className="text-[#111]" href="/">Login</a>
         </div>
 
       </nav>
@@ -27,32 +24,29 @@ function Topheader(){
 
 function MainText(){
   return(
-    <section className = "mainText">
-    <div className = "h1text">
-      <h1>
+    <section className = "text-center text-[#383838]">
+    <div className = "text-6xl pt-[3ch]">
+      <h1 className = "font-[PoppinsBold]">
         Faça seu treino com a ajuda da I.A e a <br />
         simplicidade do Whatsapp
       </h1>
     </div>
-
     </section>
   )
 }
 
 function Assinar(){
   return(
-    <div className = "assinarButton">
-        <a className="btn-assinar btn--primary" href="/">Assinar agora</a>
+    <div className = "flex justify-center pt-12">
+        <a className="shadow-lg btn--primary bg-[#ff4d4d] font-[PoppinsBold] text-2xl justify-center inline-flex items-center rounded-full pt-[20px] pb-[20px] pr-[21px] pl-[21px]" href="/">Assinar agora</a>
     </div>
   )
 }
 
 function Iphone(){
   return(
-    <div className = "baseIphone"> 
-    <div className = "iphone"> 
+    <div className = "pt-36 flex justify-center"> 
       <img src="iphone.png" />
-    </div>
     </div>
   )
 }

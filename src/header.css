@@ -1,56 +1,8 @@
-@font-face {
-  font-family: 'Poppins';
-  src: url('assets/poppings/Poppins-ExtraBold.ttf')
-}
-
-.topheader{
-    font-family: "Poppins";
-}
-
-.topbar__perseus{
-    font-weight: 800;
-    font-size: 36px;
-    text-decoration: none;
-    color: #383838;
-}
-
-.topbar__nav {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 24px 24px;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 16px;
-}
-
-.topbar__actions {
-    font-family: "PoppinsBold";
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
 .btn {
-  display: inline-flex;
-  align-items: center;
   justify-content: center;
   height: 40px;
   padding: 0 16px;
   border-radius: 999px;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.btn--primary {
-  background: #ff4d4d;
-  color: #fff;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
-}
-
-.btn--link {
-  color: #111;
 }
 
 /* Responsivo simples */
