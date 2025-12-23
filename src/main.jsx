@@ -25,7 +25,7 @@ function Topheader(){
 function MainText(){
   return(
     <section className = "text-center text-[#383838]">
-    <div className = "text-6xl pt-[3ch]">
+    <div className = "text-6xl pt-[2ch]">
       <h1 className = "font-[PoppinsBold]">
         Faça seu treino com a ajuda da I.A e a <br />
         simplicidade do Whatsapp
@@ -45,7 +45,7 @@ function Assinar(){
 
 function Iphone(){
   return(
-    <div className = "pt-36 flex justify-center"> 
+    <div className = "pt-20 flex justify-center"> 
       <img src="iphone.png" />
     </div>
   )
