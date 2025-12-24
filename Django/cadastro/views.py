@@ -10,7 +10,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from .serializers import RegisterSerializer, LoginSerializer
 
 
-def gerar_tokens(user: User) -> dict:
+def gerar_tokens(user: User): # Retorna um dicionário
     refresh = RefreshToken.for_user(user)
     return {
         "refresh": str(refresh),
