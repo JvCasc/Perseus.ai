@@ -30,6 +30,7 @@ function MainText(){
         Faça seu treino com a ajuda da I.A e a <br />
         simplicidade do Whatsapp
       </h1>
+      <p className="font-[PoppinsLight] text-2xl pt-[1ch]">Treinos personalizados entregues de forma simples e prática.</p>
     </div>
     </section>
   )
@@ -37,7 +38,7 @@ function MainText(){
 
 function Assinar(){
   return(
-    <div className = "flex justify-center pt-12">
+    <div className = "flex justify-center pt-16">
         <a className="shadow-lg btn--primary bg-[#ff4d4d] font-[PoppinsBold] text-2xl justify-center inline-flex items-center rounded-full pt-[20px] pb-[20px] pr-[21px] pl-[21px]" href="/">Assinar agora</a>
     </div>
   )
@@ -45,7 +46,7 @@ function Assinar(){
 
 function Iphone(){
   return(
-    <div className = "pt-36 flex justify-center"> 
+    <div className = "pt-16 flex justify-center"> 
       <img src="iphone.png" />
     </div>
   )
