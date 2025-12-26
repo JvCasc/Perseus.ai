@@ -10,6 +10,11 @@
   src: url('assets/poppings/Poppins-Bold.ttf')
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url('assets/poppings/Poppins-Regular.ttf')
+}
+
 :root {
   line-height: 1.5;
   font-weight: 400;
