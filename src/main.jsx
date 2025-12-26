@@ -2,6 +2,9 @@ import { createRoot } from 'react-dom/client'
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { TelaCadastroPerseus } from './register';
+
 import './index.css'
 import './header.css'
 import './mainContent.css'
@@ -25,12 +28,11 @@ function Topheader(){
 function MainText(){
   return(
     <section className = "text-center text-[#383838]">
-    <div className = "text-6xl pt-[3ch]">
+    <div className = "text-6xl pt-[2ch]">
       <h1 className = "font-[PoppinsBold]">
         Faça seu treino com a ajuda da I.A e a <br />
         simplicidade do Whatsapp
       </h1>
-      <p className="font-[PoppinsLight] text-2xl pt-[1ch]">Treinos personalizados entregues de forma simples e prática.</p>
     </div>
     </section>
   )
@@ -38,7 +40,7 @@ function MainText(){
 
 function Assinar(){
   return(
-    <div className = "flex justify-center pt-16">
+    <div className = "flex justify-center pt-12">
         <a className="shadow-lg btn--primary bg-[#ff4d4d] font-[PoppinsBold] text-2xl justify-center inline-flex items-center rounded-full pt-[20px] pb-[20px] pr-[21px] pl-[21px]" href="/">Assinar agora</a>
     </div>
   )
@@ -46,7 +48,7 @@ function Assinar(){
 
 function Iphone(){
   return(
-    <div className = "pt-16 flex justify-center"> 
+    <div className = "pt-20 flex justify-center"> 
       <img src="iphone.png" />
     </div>
   )
@@ -120,7 +122,7 @@ function EmojiParticles() {
   );
 }
 
-function App(){
+function MainPage(){
   return(
     <>
     <Topheader/>
@@ -131,7 +133,18 @@ function App(){
     <Iphone />
     </div>
     </>
-  )
+    )
+}
+
+function App(){
+  return(
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/register" element={<TelaCadastroPerseus />} />
+      </Routes>
+    </BrowserRouter>
+    )
 }
 
 createRoot(document.getElementById('root')).render(
