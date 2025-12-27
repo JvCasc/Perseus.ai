@@ -8,8 +8,6 @@ import { TelaLoginPerseus } from './login';
 
 
 import './index.css'
-import './header.css'
-import './mainContent.css'
 
 function Topheader(){
   return (
@@ -19,7 +17,7 @@ function Topheader(){
 
         <div className="font-[PoppinsBold] gap-8 items-center flex">
           <a className="shadow-lg inline-flex items-center bg-[#ff4d4d] justify-center rounded-full pt-[8px] pb-[8px] pr-[21px] pl-[21px]" href="/">Assinar agora</a>
-          <a className="text-[#111]" href="/">Login</a>
+          <a className="text-[#111]" href="/login">Login</a>
         </div>
 
       </nav>
@@ -51,7 +49,7 @@ function Assinar(){
 function Iphone(){
   return(
     <div className = "pt-20 flex justify-center"> 
-      <img src="iphone.png" />
+      <img src="iphoneTodo.png" />
     </div>
   )
 }
