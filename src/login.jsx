@@ -10,7 +10,7 @@ function Topheader(){
   )
 }
 
-function TelaCadastroPerseus(){
+function TelaLoginPerseus(){
   return (
     <div className="min-h-screen bg-white">
         <Topheader />
@@ -22,25 +22,19 @@ function TelaCadastroPerseus(){
             <img src="/emojis/notebook.png"/>
           </div>
 
-          <h2 className="mb-6 text-lg font-semibold text-gray-900 font-[Poppins]">
-            Primeira vez? Crie sua conta.
+          <h2 className="mb-10 text-lg font-semibold text-gray-900 font-[Poppins]">
+            Bem-Vindo de volta.
           </h2>
 
           {/* Form */}
           <form className="mx-auto w-full max-w-sm text-left">
             <div className="space-y-5">
-              <div>
-                <label className="mb-2 block text-sm font-medium text-gray-900 font-[Poppins]">
-                  Nome
-                </label>
-                <input type="text" className="text-black h-10 w-full rounded-md border border-gray-300 px-3 text-sm outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200"/>
-              </div>
 
               <div>
                 <label className="mb-2 block text-sm font-medium text-gray-900 font-[Poppins]">
                   E-mail
                 </label>
-                <input type="email" placeholder="example@gmail.com" className="text-black h-10 w-full rounded-md border border-gray-300 px-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-400 focus:ring-2 focus:ring-gray-200"/>
+                <input type="email" className="text-black h-10 w-full rounded-md border border-gray-300 px-3 text-sm outline-none placeholder:text-gray-400 focus:border-gray-400 focus:ring-2 focus:ring-gray-200"/>
               </div>
 
               <div>
@@ -50,35 +44,17 @@ function TelaCadastroPerseus(){
                 <input type="password" className="text-black h-10 w-full rounded-md border border-gray-300 px-3 text-sm outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200"/>
               </div>
 
-              <div>
-                <label className="mb-2 block text-sm font-medium text-gray-900 font-[Poppins]">
-                  Confirmar senha
-                </label>
-                <input type="password" className="text-black h-10 w-full rounded-md border border-gray-300 px-3 text-sm outline-none focus:border-gray-400 focus:ring-2 focus:ring-gray-200"/>
-              </div>
             </div>
 
             {/* Botões */}
             <div className="mt-8 space-y-4">
               <button type="submit" className=" cursor-pointer font-[Poppins] h-11 w-full rounded-md bg-red-500 text-sm font-semibold text-white shadow-md shadow-gray-200 hover:bg-red-600 active:bg-red-700">
-                Criar conta
+                Entrar
               </button>
 
-<a
-  href="/login" 
-  className="
-    cursor-pointer
-    inline-flex items-center justify-center
-    font-[Poppins]
-    h-11 w-full rounded-md
-    border border-gray-300 bg-white
-    text-sm font-semibold text-gray-500
-    shadow-md shadow-gray-200
-    transition-colors
-    hover:bg-gray-50
-    active:bg-gray-100">
-  Já possuo uma conta
-</a>
+              <a type="button" href ="/register" className="inline-flex items-center justify-center cursor-pointer font-[Poppins] h-11 w-full rounded-md border border-gray-300 bg-white text-sm font-semibold text-gray-500 shadow-md shadow-gray-200 hover:bg-gray-50 active:bg-gray-100">
+                Criar conta
+              </a>
             </div>
           </form>
         </div>
@@ -87,4 +63,4 @@ function TelaCadastroPerseus(){
   );
 }
 
-export { TelaCadastroPerseus }
+export { TelaLoginPerseus }

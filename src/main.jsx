@@ -4,6 +4,8 @@ import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { TelaCadastroPerseus } from './register';
+import { TelaLoginPerseus } from './login';
+
 
 import './index.css'
 import './header.css'
@@ -142,6 +144,7 @@ function App(){
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/register" element={<TelaCadastroPerseus />} />
+        <Route path="/login" element={<TelaLoginPerseus />} />
       </Routes>
     </BrowserRouter>
     )
