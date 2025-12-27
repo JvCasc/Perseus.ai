@@ -11,6 +11,11 @@
 }
 
 @font-face {
+  font-family: 'PoppinsLight';
+  src: url('assets/poppings/Poppins-Light.ttf')
+}
+
+@font-face {
   font-family: 'Poppins';
   src: url('assets/poppings/Poppins-Regular.ttf')
 }
